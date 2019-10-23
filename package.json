@@ -1,5 +1,5 @@
 {
-  "name": "react-slides",
+  "name": "@amcgavin/react-slides",
   "version": "0.1.0",
   "author": "Alec McGavin",
   "license": "MIT",
@@ -38,5 +38,14 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "description": "Create a slideshow for React code",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amcgavin/react-slides.git"
+  },
+  "bugs": {
+    "url": "https://github.com/amcgavin/react-slides/issues"
+  },
+  "homepage": "https://github.com/amcgavin/react-slides#readme"
 }
