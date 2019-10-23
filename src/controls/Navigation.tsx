@@ -8,16 +8,16 @@ interface Props {
 
 const Navigation: React.FC<Props> = ({onStartDemo, onNextSlide, onPreviousSlide}) => {
   React.useEffect(() => {
-    const handler = event => {
+    const handler = (event: KeyboardEvent) => {
       let handled = true
-      switch (event.keyCode) {
-        case 39: // right
+      switch (event.code) {
+        case "ArrowRight":
           onNextSlide()
           break
-        case 37: // left
+        case "ArrowLeft":
           onPreviousSlide()
           break
-        case 32: // space
+        case "Space":
           onStartDemo()
           break
         default:
