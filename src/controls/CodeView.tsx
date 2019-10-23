@@ -5,10 +5,16 @@ import {hopscotch as style} from 'react-syntax-highlighter/dist/esm/styles/prism
 
 SyntaxHighlighter.registerLanguage('jsx', jsx)
 
-export default ({src}) => {
+interface CodeViewProps {
+  source: string
+}
+
+const CodeView: React.FC<CodeViewProps> = ({source}) => {
   return (
     <SyntaxHighlighter language="jsx" style={style}>
-      {src}
+      {source}
     </SyntaxHighlighter>
   )
 }
+
+export default React.memo(CodeView)
